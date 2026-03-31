@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Credenciamento</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="header">
+    <h1>Gestão de Convidados</h1>
+    <button id="btn-tema">Modo Escuro</button>
+  </div>
+
+  <div class="container">
+    <h2>Cadastro</h2>
+
+    <form id="form-cadastro">
+      <input type="text" id="nome" placeholder="Nome">
+      <input type="email" id="email" placeholder="E-mail">
+      <input type="tel" id="telefone" placeholder="Telefone">
+      <input type="text" id="empresa" placeholder="Empresa">
+
+      <select id="tipo">
+        <option value="">Tipo</option>
+        <option>VIP</option>
+        <option>Geral</option>
+      </select>
+
+      <button type="submit">Confirmar</button>
+    </form>
+
+    <p id="erro-msg"></p>
+  </div>
+
+  <div class="lista">
+    <h2>Convidados (<span id="contador">0</span>)</h2>
+    <ul id="lista-convidados"></ul>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
